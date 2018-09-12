@@ -1,0 +1,24 @@
+{
+  "name": "contact-rest-api",
+  "version": "1.0.0",
+  "description": "a rest-api-exemple",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently  \"npm run server\" \"npm run client\""
+  },
+  "author": "\"Aymen Soussi\"",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "client": "0.0.1",
+    "concurrently": "^4.0.1",
+    "create-react-app": "^1.5.2",
+    "express": "^4.16.3",
+    "mongodb": "^3.1.4",
+    "mongoose": "^5.2.13"
+  }
+}
